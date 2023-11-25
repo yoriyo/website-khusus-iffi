@@ -12,11 +12,11 @@
     </head>
     <body>
         <div class="container">
-            <img src="Images\menu.png" class="menu-icon">
+            <img src="Images\menu.png" class="menu-icon" onclick="openmenu()">
             <div class="menu-box">
                 <div class="right-links">
                     <a href="#">Get Started</a>
-                    <img src="Images\cross.png">
+                    <img src="Images\cross.png" onclick="closemenu()">
                 </div>
                 <div class="menu-links">
                     <a href="#">Home</a>
@@ -27,5 +27,15 @@
                 </div>
             </div>
         </div>
+<script>
+var menu = document.getElementById("menu");
+
+function closemenu(){
+    menu.style.top="-100vh";
+}
+
+function openmenu(){
+    menu.style.top="17%";
+}
     </body>
 </html>
